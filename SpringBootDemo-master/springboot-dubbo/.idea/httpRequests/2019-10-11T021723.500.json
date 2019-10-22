@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-10-11T06:17:23.438+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Invalid bound statement (not found): com.dubbo.provider.dao.UserDao.selectMan",
+  "path": "/select"
+}

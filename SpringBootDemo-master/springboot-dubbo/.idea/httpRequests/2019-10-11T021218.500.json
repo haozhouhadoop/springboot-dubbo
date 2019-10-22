@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-10-11T06:12:18.781+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Could not find result map com.dubbo.provider.Entity.Man",
+  "path": "/select"
+}

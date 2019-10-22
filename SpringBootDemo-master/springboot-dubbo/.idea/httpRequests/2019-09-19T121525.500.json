@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-09-18T16:15:24.981+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "\r\n### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'UUID' in 'field list'\r\n### The error may exist in file [D:\\chrome下载地址\\SpringBootDemo-master\\SpringBootDemo-master\\springboot-dubbo\\dubbo-provider\\target\\classes\\mappers\\userDao.xml]\r\n### The error may involve com.dubbo.provider.dao.UserDao.getUserById-Inline\r\n### The error occurred while setting parameters\r\n### SQL: select UUID,name,sex from student where id=?;\r\n### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'UUID' in 'field list'\n; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'UUID' in 'field list'",
+  "path": "/student/id/20140555"
+}

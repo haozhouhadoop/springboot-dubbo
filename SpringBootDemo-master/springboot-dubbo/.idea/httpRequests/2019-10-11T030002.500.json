@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-10-11T07:00:02.922+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "nested exception is org.apache.ibatis.exceptions.PersistenceException: \r\n### Error querying database.  Cause: java.lang.UnsupportedOperationException\r\n### The error may exist in file [D:\\chrome下载地址\\SpringBootDemo-master\\SpringBootDemo-master\\springboot-dubbo\\dubbo-provider\\target\\classes\\mappers\\userDao.xml]\r\n### The error may involve com.dubbo.provider.dao.UserDao.selectMan\r\n### The error occurred while handling results\r\n### SQL: select id,name from users\r\n### Cause: java.lang.UnsupportedOperationException",
+  "path": "/select/2"
+}

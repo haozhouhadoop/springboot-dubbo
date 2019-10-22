@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dubbo.provider.dao.UserDao">
+
+    <resultMap id="studentMap" type="com.dubbo.provider.Entity.Student">
+        <result property="UUID" column="id"></result>
+        <result property="name" column="name"></result>
+        <result property="age" column="age"></result>
+        <result property="sex" column="sex"></result>
+        <result property="classRoom" column="classroom"></result>
+    </resultMap>
+
+    <resultMap id="manMap" type="com.dubbo.provider.Entity.Man">
+        <result property="id" column="id"></result>
+        <result property="name" column="name"></result>
+        <result property="age" column="age"></result>
+    </resultMap>
+    <select id="selectUser" resultType="String">
+        select `name` from student
+    </select>
+
+    <select id="getUserById" parameterType="String" resultMap="studentMap">
+        select id,name,sex from student where id=#{UUID};
+    </select>
+
+    <select id="selectMan" parameterType="int" resultType="java.util.Map">
+        select id,name from users where id=#{id}
+    </select>
+
+
+
+    <insert id="insert" parameterType="com.dubbo.provider.Entity.Student">
+        INSERT INTO student(id,name,sex,classroom)
+        VALUE
+        (#{UUID},#{name},#{sex},#{classRoom})
+    </insert>
+    <delete id="UserDelete" parameterType="com.dubbo.provider.Entity.Student">
+        DELETE FROM student WHERE name=#{name}
+    </delete>
+
+    <update id="UserUpdate">
+        update student
+        set
+            name = #{name},
+            sex =  #{sex}
+        where id = #{UUID}
+    </update>
+
+</mapper>
+
+<!--mybatis逐行读入，解析错误可以定位到行-->

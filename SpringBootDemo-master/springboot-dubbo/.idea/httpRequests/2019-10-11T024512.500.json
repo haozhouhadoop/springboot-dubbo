@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-10-11T06:45:12.957+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Could not write JSON: com.dubbo.provider.Entity.Man cannot be cast to java.base/java.lang.String; nested exception is com.fasterxml.jackson.databind.JsonMappingException: com.dubbo.provider.Entity.Man cannot be cast to java.base/java.lang.String (through reference chain: java.util.ArrayList[0])",
+  "path": "/select/2"
+}
